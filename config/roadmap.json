@@ -1,0 +1,13 @@
+{
+  "phases": [
+    {"name": "Phase 1: MC/Ony", "date": "2024-11-21", "status": "Current"},
+    {"name": "Phase 2: BWL", "date": "2025-02-01", "status": "Upcoming"},
+    {"name": "Phase 3: AQ", "date": "2025-05-01", "status": "Future"},
+    {"name": "Phase 4: Naxx", "date": "2025-08-01", "status": "Future"},
+    {"name": "Phase 5: TBC Launch", "date": "2025-11-01", "status": "Future"}
+  ],
+  "demand_shifts": [
+    {"phase": "Phase 3: AQ", "item_ids": [7067, 7068], "reason": "Nature/Fire Resistance Gear & Consumables"},
+    {"phase": "Phase 4: Naxx", "item_ids": [14344, 12360], "reason": "T3 Quests and Sapphiron Resistance"}
+  ]
+}

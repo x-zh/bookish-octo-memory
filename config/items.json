@@ -1,0 +1,19 @@
+{
+  "items": [
+    {"id": 13468, "name": "Black Lotus", "category": "Herb"},
+    {"id": 12360, "name": "Arcanite Bar", "category": "Mat"},
+    {"id": 12811, "name": "Righteous Orb", "category": "Mat"},
+    {"id": 7067, "name": "Elemental Earth", "category": "Mat"},
+    {"id": 7068, "name": "Elemental Fire", "category": "Mat"},
+    {"id": 13463, "name": "Dreamfoil", "category": "Herb"},
+    {"id": 13465, "name": "Mountain Silversage", "category": "Herb"},
+    {"id": 13466, "name": "Plaguebloom", "category": "Herb"},
+    {"id": 14344, "name": "Large Brilliant Shard", "category": "Mat"},
+    {"id": 14342, "name": "Mooncloth", "category": "Mat"},
+    {"id": 13464, "name": "Golden Sansam", "category": "Herb"},
+    {"id": 8846, "name": "Gromsblood", "category": "Herb"},
+    {"id": 8845, "name": "Ghost Mushroom", "category": "Herb"},
+    {"id": 13422, "name": "Stonescale Eel", "category": "Fish"},
+    {"id": 13467, "name": "Winter's Bite", "category": "Herb"}
+  ]
+}

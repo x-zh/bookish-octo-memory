@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Local data (excluding the tracking CSV)
+data/*
+!data/price_history.csv
+
+# Playwright
+.playwright/
+browser_downloads/
+
+# Debug files
+debug_*.html
+dump_*.html
+item_*.html

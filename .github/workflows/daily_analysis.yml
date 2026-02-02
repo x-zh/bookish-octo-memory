@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: '3.12'
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-          playwright install chromium
+          uv sync
+          uv run playwright install chromium
 
       - name: Run Gold Analysis
         env:
           PYTHONPATH: .
-        run: python3 src/main.py
+        run: uv run python src/main.py
 
       - name: Commit and push changes
         run: |

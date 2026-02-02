@@ -16,18 +16,18 @@ An automated tool to mine gold-making insights from World of Warcraft (WoW) Clas
 ### Prerequisites
 
 - Python 3.12+
-- `pip`
+- `uv`
 
 ### Installation
 
 1. Clone the repository.
-2. Install dependencies:
+2. Install dependencies and create virtual environment:
    ```bash
-   pip install -r requirements.txt
+   uv sync
    ```
 3. Install Playwright browsers:
    ```bash
-   playwright install chromium
+   uv run playwright install chromium
    ```
 
 ## Usage
@@ -36,7 +36,7 @@ Run the main analysis script:
 
 ```bash
 export PYTHONPATH=$PYTHONPATH:.
-python3 src/main.py
+uv run python src/main.py
 ```
 
 ## Configuration

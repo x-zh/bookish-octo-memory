@@ -10,6 +10,7 @@ An automated tool to mine gold-making insights from World of Warcraft (WoW) Clas
     - **Phase Prediction**: Identifies items that will spike in demand during future game phases (e.g., Elemental Earth for AQ, Arcanite Bars for Naxx).
 - **Daily Automation**: Integrated GitHub Actions workflow runs the analysis daily and updates the price history.
 - **CLI Dashboard**: Quick summary of "Buy", "Sell", and "Accumulate" recommendations.
+- **Web Dashboard**: Automated GitHub Pages hosting showing latest insights.
 
 ## Setup
 

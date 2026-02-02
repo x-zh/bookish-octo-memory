@@ -2,6 +2,8 @@ import unittest
 import json
 from src.scraper.tsm_scraper import TSMScraper
 from src.analysis.predictor import PricePredictor
+from src.utils.html_generator import HTMLGenerator
+import os
 
 class TestGoldMaker(unittest.TestCase):
     def test_price_formatting(self):
@@ -15,6 +17,20 @@ class TestGoldMaker(unittest.TestCase):
         predictor = PricePredictor(history_filepath="nonexistent.csv")
         signals = predictor.analyze_item(13468, 10000)
         self.assertIsInstance(signals, list)
+
+    def test_html_generation(self):
+        predictor = PricePredictor()
+        generator = HTMLGenerator(output_dir="test_docs")
+        results = [
+            {"item_id": 13468, "name": "Black Lotus", "market_value": 10000, "quantity": 5, "sale_rate": 0.5}
+        ]
+        generator.generate(results, predictor)
+        self.assertTrue(os.path.exists("test_docs/index.html"))
+        # Clean up
+        if os.path.exists("test_docs/index.html"):
+            os.remove("test_docs/index.html")
+        if os.path.exists("test_docs"):
+            os.rmdir("test_docs")
 
 if __name__ == "__main__":
     unittest.main()

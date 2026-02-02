@@ -4,6 +4,7 @@ import os
 from src.scraper.tsm_scraper import TSMScraper
 from src.utils.storage import PriceStorage
 from src.analysis.predictor import PricePredictor
+from src.utils.html_generator import HTMLGenerator
 
 async def main():
     print("=== WoW Classic Gold Making Insights ===")
@@ -42,6 +43,11 @@ async def main():
 
     if not found_recommendation:
         print("No specific buy/sell signals at this time.")
+
+    # 5. Generate HTML Report
+    print("\nGenerating HTML report...")
+    generator = HTMLGenerator()
+    generator.generate(results, predictor)
 
 if __name__ == "__main__":
     asyncio.run(main())
